@@ -47,8 +47,8 @@
   --purple-primary: rgba(132, 0, 255, 1);
   --radius: 0.625rem;
   --background: oklch(100% 0.00011 271.152);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
+  --foreground: oklch(0% 0 0);
+  --card: rgb(240, 240, 240);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
@@ -85,7 +85,7 @@
 .dark {
   --background: oklch(14.175% 0.05524 320.634);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --card: oklch(16.626% 0.07544 330.959);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
@@ -130,3 +130,6 @@
 }
 
 
+.card{
+  @apply md:w-auto w-full p-4 items-start bg-card  rounded-lg border border-gray-500;
+}

@@ -7,7 +7,7 @@ function Navbar() {
   const pathName = usePathname()
   const navItems = [
     { name: "Home", href: "/" },
-    { name: "Project", href: "/project" },
+    { name: "Projects", href: "/project" },
     { name: "Contact", href: "/contact" },
   ];
   return (
