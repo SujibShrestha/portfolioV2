@@ -25,12 +25,7 @@ const CardComponent = () => {
       href: "https://agent-v-ten.vercel.app/",
       src: "/ss/AgentV.png",
       stack: ["Next.js", "Supabase", "TailwindCSS","Clerk","Vapi"],
-    },{
-      name: "Agent",
-      href: "https://agent-v-ten.vercel.app/",
-      src: "/ss/AgentV.png",
-      stack: ["Next.js", "Supabase", "TailwindCSS","Clerk","Vapi"],
-    },
+    }
   ];
 
   return (
