@@ -1,11 +1,9 @@
 import React from 'react'
 import { Button } from './ui/button'
 import Image from 'next/image'
-import { LinkIcon } from 'lucide-react'
-import Link from 'next/link'
 
+import Link from 'next/link'
 const Socials = () => {
-    const linkedin = <LinkIcon/>
     const socials = [
         {name:"GitHub",src:"/github.png",href:'https://github.com/SujibShrestha'},
         {name:"Linkedn",src:"/linkedin.png",href:"https://www.linkedin.com/in/sujib-shrestha-245868282/"},

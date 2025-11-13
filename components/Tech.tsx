@@ -16,7 +16,7 @@ const Tech = () => {
   {name:"TypeScript",src:"/ts.png"},
   ]
   return (
-    <section  className='my-10 flex items-center justify-center   w-full'>
+    <section  className='my-15 flex items-center justify-center   w-full'>
 <section className='bg-card rounded-lg border border-gray-500 md:w-[80vh] w-full p-5'>
 
 <h1 className='text-2xl'>Technologies</h1>

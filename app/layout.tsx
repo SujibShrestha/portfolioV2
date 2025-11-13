@@ -4,6 +4,7 @@ import "./globals.css";
 import Squares from "@/components/Squares";
 import { ThemeProvider } from "@/components/theme-provider";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -33,7 +34,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-   <div className="relative min-h-screen">
+   <div className="relative min-h-screen pt-2">
   {/* Background Squares */}
   <div className="absolute inset-0 -z-10">
 
@@ -48,6 +49,7 @@ export default function RootLayout({
   <div className="relative z-10">
     <Navbar />
     {children}
+    <Footer/>
   </div>
 </div>
 </ThemeProvider>
