@@ -10,7 +10,7 @@ const HeroSection = () => {
   
   return (
    <section className="mx-auto w-full flex lg:justify-center items-center gap-5 lg:gap-40 max-lg:flex-col">
-      <section className="bg-white p-5  border border-accent-foreground rounded-lg">
+      <section className="bg-background p-5  border border-accent-foreground rounded-lg">
         <Image src={profile} alt="Profile" width={200} height={200}  className="rounded-lg" />
       </section>
       <section className="card max-sm:mt-5 ">
