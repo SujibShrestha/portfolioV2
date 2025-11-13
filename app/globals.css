@@ -133,3 +133,15 @@
 .card{
   @apply md:w-auto w-full p-4 items-start bg-card  rounded-lg border border-gray-500;
 }
+@keyframes glow {
+  from {
+    text-shadow: 0 0 2px #1aec83, 0 0 10px #1af851;
+  }
+  to {
+    text-shadow: 0 0 5px #38bdf8, 0 0 40px #38bdf8;
+  }
+}
+
+.glow-animate {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
