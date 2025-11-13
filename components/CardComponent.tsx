@@ -9,8 +9,10 @@ import {
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
+import { usePathname } from "next/navigation";
 
 const CardComponent = () => {
+  const pathName = usePathname()
   const projects = [
     {
       name: "PokeDex",
@@ -23,12 +25,17 @@ const CardComponent = () => {
       href: "https://agent-v-ten.vercel.app/",
       src: "/ss/AgentV.png",
       stack: ["Next.js", "Supabase", "TailwindCSS","Clerk","Vapi"],
+    },{
+      name: "Agent",
+      href: "https://agent-v-ten.vercel.app/",
+      src: "/ss/AgentV.png",
+      stack: ["Next.js", "Supabase", "TailwindCSS","Clerk","Vapi"],
     },
   ];
 
   return (
     <div className="grid mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center">
-      {projects.map((project, index) => (
+      {projects.slice(0,pathName === "/projects"?projects.length :2).map((project, index) => (
         <motion.a
           key={index}
           href={project.href}

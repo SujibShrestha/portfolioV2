@@ -49,7 +49,7 @@ export default function RootLayout({
   <div className="relative z-10 overflow-hidden">
     <Navbar />
     {children}
-    <Footer/>
+    <Footer />
   </div>
 </div>
 </ThemeProvider>

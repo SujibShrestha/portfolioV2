@@ -5,7 +5,7 @@ export default function Home() {
   return (
    <main className="min-h-screen w-full  mt-30">
 <HeroSection />
-<Tech/>
+<Tech />
 <Projects />
    </main>
   );
