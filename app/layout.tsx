@@ -34,7 +34,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-   <div className="relative min-h-screen pt-2">
+   <div className="relative min-h-screen pt-2 w-full">
   {/* Background Squares */}
   <div className="absolute inset-0 -z-10">
 
@@ -46,7 +46,7 @@ export default function RootLayout({
       </div>
 
   {/* Foreground content */}
-  <div className="relative z-10">
+  <div className="relative z-10 overflow-hidden">
     <Navbar />
     {children}
     <Footer/>
