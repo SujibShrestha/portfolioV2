@@ -11,10 +11,12 @@ const Socials = () => {
     ]
   return (
     <div className='flex
-     items-center justify-between'> <Button
+     items-center justify-between'> 
+     <Link href="https://drive.google.com/file/d/1hP3lxhUrjHoASghFXKgL5uAjUBwnTguk/view?usp=sharing">
+     <Button
      className="p-5 text-lg cursor-pointer hover:bg-chart-2">
             Resume
-          </Button>
+          </Button></Link>
         <div className='flex items-end  m-2'>
           {socials.map((item, id) => (
             <div
