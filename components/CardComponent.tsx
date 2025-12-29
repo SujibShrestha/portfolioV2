@@ -52,10 +52,9 @@ const CardComponent = () => {
   return (
     <div className="grid mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center">
       {projects.slice(0,pathName === "/projects"?projects.length :4).map((project, index) => (
-        <motion.a
+        <motion.div
           key={index}
-          href={project.href}
-          target="_blank"
+        
           rel="noopener noreferrer"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -103,7 +102,7 @@ const CardComponent = () => {
             {/* Footer */}
             <CardFooter className="p-4 pt-0 flex items-center justify-between">
               <p className="text-xs text-muted-foreground hover:text-primary transition-colors">
-                View Project →
+            <Link className="cursor-pointer" href={project.href}> View Project →</Link>   
               </p>
 
               <p className="text-xs text-muted-foreground hover:text-primary transition-colors">
@@ -111,7 +110,7 @@ const CardComponent = () => {
               </p>
             </CardFooter>
           </Card>
-        </motion.a>
+        </motion.div>
       ))}
     </div>
   );
