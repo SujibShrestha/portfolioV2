@@ -12,7 +12,7 @@ const Socials = () => {
   return (
     <div className='flex
      items-center justify-between'> 
-     <Link href="https://drive.google.com/file/d/1hP3lxhUrjHoASghFXKgL5uAjUBwnTguk/view?usp=sharing">
+     <Link href="https://drive.google.com/file/d/1Rj1Wao_RBImkr9Sxelb-a6hfR2VulGsK/view?usp=sharing">
      <Button
      className="p-5 text-lg cursor-pointer hover:bg-chart-2">
             Resume
