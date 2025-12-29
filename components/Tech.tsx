@@ -3,6 +3,7 @@ import React from 'react'
 
 const Tech = () => {
   const tech = [{name:"NextJS",src:"/nextjs.png"},
+    {name:"ExpressJS",src:"/express.png"},
     {name:"ReactJS",src:"/react.png"},
   {name:"NodeJS",src:"/nodejs.png"},
   {name:"TailwindCSS",src:"/tailwindcss.png"},

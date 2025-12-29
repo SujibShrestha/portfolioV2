@@ -10,27 +10,48 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { Github } from "lucide-react";
 
 const CardComponent = () => {
   const pathName = usePathname()
   const projects = [
     {
+      name: "Tele-app (Chat application)",
+      href: "https://chat-app-kjv7.vercel.app/",
+      src: "/ss/chat-app.png",
+      stack: ["React JS", "Mongo DB", "Express JS", "Tailwind CSS" ,"Socket IO"],
+      github: "https://github.com/SujibShrestha/chat-app"
+    },
+    {
+      name: "Chess game",
+      href: "https://chess-five-puce-28.vercel.app/",
+      src: "/ss/chess.png",
+      stack: ["Express JS", "Socket io", "Node JS"],
+      github: "https://github.com/SujibShrestha/chess"
+
+    },
+    {
       name: "PokeDex",
       href: "https://pokedex-two-rouge.vercel.app/",
       src: "/ss/pokedex.png",
       stack: ["Next.js", "Supabase", "TailwindCSS"],
+      github: "https://github.com/SujibShrestha/pokedexV2"
+
     },
     {
       name: "Agent",
       href: "https://agent-v-ten.vercel.app/",
       src: "/ss/AgentV.png",
       stack: ["Next.js", "Supabase", "TailwindCSS","Clerk","Vapi"],
+      github: "https://github.com/SujibShrestha/agentV"
+
     }
   ];
 
   return (
     <div className="grid mt-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center">
-      {projects.slice(0,pathName === "/projects"?projects.length :2).map((project, index) => (
+      {projects.slice(0,pathName === "/projects"?projects.length :4).map((project, index) => (
         <motion.a
           key={index}
           href={project.href}
@@ -61,7 +82,7 @@ const CardComponent = () => {
             </CardHeader>
 
             {/* Content */}
-            <CardContent className="p-4">
+            <CardContent className="p-2">
               <CardTitle className="text-lg font-semibold text-foreground mb-2">
                 {project.name}
               </CardTitle>
@@ -80,9 +101,13 @@ const CardComponent = () => {
             </CardContent>
 
             {/* Footer */}
-            <CardFooter className="p-4 pt-0">
+            <CardFooter className="p-4 pt-0 flex items-center justify-between">
               <p className="text-xs text-muted-foreground hover:text-primary transition-colors">
                 View Project →
+              </p>
+
+              <p className="text-xs text-muted-foreground hover:text-primary transition-colors">
+                <Link href={project.github}><Github className="w-5 h-5"/></Link>
               </p>
             </CardFooter>
           </Card>
